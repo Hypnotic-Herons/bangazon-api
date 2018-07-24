@@ -25,7 +25,7 @@
 The initial version is for internal consumption only, so do not require permissions to access, or manipulate, any resources.
 
 ### Contributors
-[Matthew Kelly] (https://github.com/MatthewKelly12) <br>
-[Meghan Debity] (https://github.com/Megraohoh) <br>
-[Levi Shubert] (https://github.com/Levi-Schubert) <br>
-[Deanna Vickers] (https://github.com/Deanna2000) <br>
+[Matthew Kelly](https://github.com/MatthewKelly12) <br>
+[Meghan Debity](https://github.com/Megraohoh) <br>
+[Levi Shubert](https://github.com/Levi-Schubert) <br>
+[Deanna Vickers](https://github.com/Deanna2000) <br>
