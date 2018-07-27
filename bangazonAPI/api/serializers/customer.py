@@ -9,3 +9,4 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Customer
 		fields = '__all__'
+
