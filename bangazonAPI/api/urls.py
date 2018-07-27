@@ -7,7 +7,7 @@ from api import views
 # Create a router and register our viewsets with it.
 router = DefaultRouter()
 router.register(r'customers', views.CustomerViewSet)
-router.register(r'product_type', ProductTypeView)
+router.register(r'product_type', views.ProductTypeView)
 
 urlpatterns = [
     url(r'^', include(router.urls))

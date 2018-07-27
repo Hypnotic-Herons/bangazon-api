@@ -1,8 +1,8 @@
 # Author: Deanna Vickers
 
 from rest_framework import viewsets
-from api.models.product_type import ProductType
-from api.serializers.product_type import ProductTypeSerializer
+from api.models import ProductType
+from api.serializers import ProductTypeSerializer
 
 
 class ProductTypeView(viewsets.ModelViewSet):

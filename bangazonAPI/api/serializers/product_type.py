@@ -2,7 +2,7 @@
 
 
 from rest_framework import serializers
-from api.models.product_type import ProductType
+from api.models import ProductType
 
 class ProductTypeSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
