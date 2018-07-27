@@ -5,7 +5,7 @@ from api.models import ProductType
 from api.serializers import ProductTypeSerializer
 
 
-class ProductTypeView(viewsets.ModelViewSet):
+class ProductTypeViewSet(viewsets.ModelViewSet):
     queryset = ProductType.objects.all()
     serializer_class = ProductTypeSerializer
     http_method_names = ['get', 'put', 'post', 'delete']
