@@ -1,5 +1,8 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
+'''
+Author: Levi Schubert
+'''
 
 class Customer(SafeDeleteModel):
 	first_name = models.CharField(max_length=100)
