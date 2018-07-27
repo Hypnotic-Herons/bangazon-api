@@ -1,0 +1,13 @@
+# Author: Deanna Vickers
+# Defining the table structure for product type
+
+from safedelete.models import SafeDeleteModel
+from django.db import models
+
+class Computer(SafeDeleteModel):
+	purchase_date = models.CharField(max_length=100, default="")
+	decommission_date = models.CharField(max_length=100, default="")
+	employeeID = models.ForeignKey('Employee', on_delete=models.CASCADE)
+
+	class Meta:
+		db_table = "computers"

@@ -1,5 +1,5 @@
 # Author: Deanna Vickers
-
+# Setting up the serializer for product type
 
 from rest_framework import serializers
 from api.models import ProductType
