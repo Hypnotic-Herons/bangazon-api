@@ -8,7 +8,7 @@ Author: Levi Schubert
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
-    queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
-    http_method_names = ['get', 'put', 'post']
+	queryset = Customer.objects.all()
+	serializer_class = CustomerSerializer
+	http_method_names = ['get', 'put', 'post']	
 	
