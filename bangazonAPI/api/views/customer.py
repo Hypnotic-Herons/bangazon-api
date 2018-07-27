@@ -1,8 +1,9 @@
 from rest_framework import viewsets
-from rest_framework.decorators import action
-from rest_framework.response import Response
+from api.models import Customer
 from api.serializers import CustomerSerializer
 
 
-class CustomerView(viewsets.ModelViewSet):
-	
+class CustomerViewSet(viewsets.ModelViewSet):
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
+    http_method_names = ['get', 'put', 'post']
