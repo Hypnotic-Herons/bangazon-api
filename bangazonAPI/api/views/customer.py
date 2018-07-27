@@ -5,6 +5,6 @@ from api.serializers import CustomerSerializer
 
 class CustomerViewSet(viewsets.ModelViewSet):
 	queryset = Customer.objects.all()
-	serializer = CustomerSerializer
-	http_methods = ['get', 'put', 'post']	
+	serializer_class = CustomerSerializer
+	http_method_names = ['get', 'put', 'post']	
 	
