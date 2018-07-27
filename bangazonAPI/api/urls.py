@@ -1,12 +1,14 @@
-from django.conf.urls import url
-from rest_framework.urlpatterns import format_suffix_patterns
-from api.views.product_type import ProductTypeView
-from django.urls import path, include
-from rest_framework import routers
 
-router = routers.DefaultRouter()
+from django.conf.urls import url, include
+from rest_framework.routers import DefaultRouter
+from api import views
+
+
+# Create a router and register our viewsets with it.
+router = DefaultRouter()
+router.register(r'customers', views.CustomerViewSet)
 router.register(r'product_type', ProductTypeView)
 
 urlpatterns = [
-   path('', include(router.urls))
+    url(r'^', include(router.urls))
 ]
