@@ -9,4 +9,4 @@ class PaymentTypeSerializer(serializers.HyperlinkedModelSerializer):
 
 	class Meta:
 		model = PaymentType
-		fields = ('id', 'url', 'customer')
+		fields = ('id', 'account_number', 'url', 'customer')
