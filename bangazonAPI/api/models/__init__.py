@@ -4,4 +4,5 @@ from .training import Training
 from .product_type import ProductType
 from .department import Department
 from .employee import Employee
+from .employee_training import EmployeeTraining
 

@@ -12,6 +12,7 @@ router.register(r'customers', views.CustomerViewSet)
 router.register(r'product_type', views.ProductTypeViewSet)
 router.register(r'department', views.DepartmentViewSet)
 router.register(r'employees', views.EmployeeViewSet)
+router.register(r'employees_training', views.EmployeeTrainingViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls))
