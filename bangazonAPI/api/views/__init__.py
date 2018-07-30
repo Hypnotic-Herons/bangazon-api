@@ -4,4 +4,5 @@ from .product_type import ProductTypeViewSet
 from .computer import ComputerViewSet
 from .department import DepartmentViewSet
 from .employee import EmployeeViewSet
+from .payment_type import PaymentTypeViewSet
 from .product import ProductViewSet

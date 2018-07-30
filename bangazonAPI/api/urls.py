@@ -14,6 +14,7 @@ router.register(r'computer', views.ComputerViewSet)
 
 router.register(r'department', views.DepartmentViewSet)
 router.register(r'employees', views.EmployeeViewSet)
+router.register(r'payment_type', views.PaymentTypeViewSet)
 router.register(r'products', views.ProductViewSet)
 
 urlpatterns = [

@@ -4,4 +4,5 @@ from .product_type import ProductTypeSerializer
 from .computer import ComputerSerializer
 from .department import DepartmentSerializer
 from .employee import EmployeeSerializer
+from .payment_type import PaymentTypeSerializer
 from .product import ProductSerializer
