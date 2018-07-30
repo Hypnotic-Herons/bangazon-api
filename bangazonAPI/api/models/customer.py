@@ -13,3 +13,6 @@ class Customer(SafeDeleteModel):
 
 	class Meta:
 		db_table = "customers"
+
+	def __str__(self):
+		return (f'{self.first_name} {self.last_name}')
