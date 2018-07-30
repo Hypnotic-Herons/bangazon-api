@@ -1,13 +1,19 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
-from api import models
+from .product_type import ProductType
+from .customer import Customer
+
 
 class Product(SafeDeleteModel):
+	'''Model for the product table has FK to customer and product_type
+	Author: Levi Schubert
+	'''
+
 	title = models.CharField(max_length=100)
 	description = models.CharField(max_length=100)
 	price = models.FloatField()
-	seller = models.ForeignKey('customers', on_delete=models.CASCADE)
-	type = 	department = models.ForeignKey('product_type', on_delete=models.CASCADE)
+	seller = models.ForeignKey('Customer', on_delete=models.CASCADE)
+	type = models.ForeignKey('ProductType', on_delete=models.CASCADE)
 
 	class meta:
 		db_table = "product"

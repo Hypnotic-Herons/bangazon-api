@@ -4,3 +4,4 @@ from .training_view import TrainingView
 from .product_type import ProductTypeViewSet
 from .department import DepartmentViewSet
 from .employee import EmployeeViewSet
+from .product import ProductViewSet

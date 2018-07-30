@@ -1,10 +1,10 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
-'''
-Author: Levi Schubert
-'''
 
 class Customer(SafeDeleteModel):
+	'''Model for the Customer table
+	Author: Levi Schubert
+	'''
 	first_name = models.CharField(max_length=100)
 	last_name = models.CharField(max_length=100)
 	# date_joined & last_login should be a UNIX timestamp as a string
