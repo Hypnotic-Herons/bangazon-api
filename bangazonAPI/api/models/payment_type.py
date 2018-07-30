@@ -19,4 +19,4 @@ class PaymentType(SafeDeleteModel):
 		db_table = "payment type"
 
 	def __str__(self):
-        return self.account_number
+		return self.account_number
