@@ -6,4 +6,4 @@ from .computer import Computer
 from .department import Department
 from .employee import Employee
 from .payment_type import PaymentType
-
+from .product import Product
