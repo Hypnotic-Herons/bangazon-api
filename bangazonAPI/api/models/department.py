@@ -14,4 +14,4 @@ class Department(SafeDeleteModel):
 		db_table = "department"
 
 	def __str__(self):
-		return self.title
+		return self.name

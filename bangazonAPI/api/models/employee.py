@@ -9,7 +9,7 @@ class Employee(SafeDeleteModel):
 	first_name = models.CharField(max_length=100)
 	last_name = models.CharField(max_length=100)
 	supervisor = models.BooleanField(blank=True, default=False)
-	department = models.ForeignKey(Department)
+	department = models.ForeignKey('Department', null=True, on_delete=models.SET_NULL)
 
 	class Meta:
-		db_tables = "employees"
+		db_table = "employees"
