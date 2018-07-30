@@ -1,11 +1,11 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel
 from .department import Department
-'''
-Author: Levi Schubert
-'''
 
 class Employee(SafeDeleteModel):
+	''' Model for the employee table, has FK to department
+	Author: Levi Schubert
+	'''
 	first_name = models.CharField(max_length=100)
 	last_name = models.CharField(max_length=100)
 	supervisor = models.BooleanField(blank=True, default=False)

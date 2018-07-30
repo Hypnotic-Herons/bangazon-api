@@ -5,4 +5,4 @@ from .product_type import ProductType
 from .computer import Computer
 from .department import Department
 from .employee import Employee
-
+from .product import Product
