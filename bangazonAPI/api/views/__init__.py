@@ -5,4 +5,4 @@ from .computer import ComputerViewSet
 from .department import DepartmentViewSet
 from .employee import EmployeeViewSet
 from .employee_training import EmployeeTrainingViewSet
-
+from .product import ProductViewSet
