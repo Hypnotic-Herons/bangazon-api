@@ -1,5 +1,5 @@
 from django.db import models
-from safedelete.models import SafeDeleteModel
+from safedelete.models import SafeDeleteModel, SOFT_DELETE_CASCADE
 from .product_type import ProductType
 from .customer import Customer
 
@@ -8,6 +8,7 @@ class Product(SafeDeleteModel):
 	'''Model for the product table has FK to customer and product_type
 	Author: Levi Schubert
 	'''
+	_safedelete_policy = SOFT_DELETE_CASCADE
 
 	title = models.CharField(max_length=100)
 	description = models.CharField(max_length=100)

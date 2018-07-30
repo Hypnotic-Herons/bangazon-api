@@ -2,8 +2,11 @@
 
 
 from django.db import models
+from safedelete.models import SafeDeleteModel, SOFT_DELETE_CASCADE
 
-class ProductType(models.Model):
+class ProductType(SafeDeleteModel):
+	_safedelete_policy = SOFT_DELETE_CASCADE
+
 	category = models.CharField(max_length=100, default="")
 	class Meta:
 		db_table = "product_type"

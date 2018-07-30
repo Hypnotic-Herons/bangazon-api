@@ -1,10 +1,11 @@
 from django.db import models
-from safedelete.models import SafeDeleteModel
+from safedelete.models import SafeDeleteModel, SOFT_DELETE_CASCADE
 
 class Customer(SafeDeleteModel):
 	'''Model for the Customer table
 	Author: Levi Schubert
 	'''
+	_safedelete_policy = SOFT_DELETE_CASCADE
 	first_name = models.CharField(max_length=100)
 	last_name = models.CharField(max_length=100)
 	# date_joined & last_login should be a UNIX timestamp as a string
