@@ -1,5 +1,5 @@
-migrations/
+bangazonAPI/api/migrations/
 *.pyc
 db.sqlite3
 
-management/
+faker_factory.py
