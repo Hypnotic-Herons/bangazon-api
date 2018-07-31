@@ -8,5 +8,5 @@ from .employee import Employee
 from .employee_training import EmployeeTraining
 from .product import Product
 from .payment_type import PaymentType
-from .product import Product
+from .product_order_join import ProductOrderJoin
 from .order import Order
