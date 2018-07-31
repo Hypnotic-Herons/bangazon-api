@@ -1,6 +1,7 @@
 from django.db import models
 from safedelete.models import SafeDeleteModel, SOFT_DELETE_CASCADE
 from .customer import Customer
+from .product import Product
 from .payment_type import PaymentType
 
 
@@ -12,6 +13,7 @@ class Order(SafeDeleteModel):
 	'''
 	_safedelete_policy = SOFT_DELETE_CASCADE
 	order_complete = models.BooleanField(default=False)
+	products_on_orders = models.ManyToManyField(Product,blank=True)
 	customer_id = models.ForeignKey('Customer', on_delete=models.CASCADE)
 	payment_id = models.ForeignKey('PaymentType', on_delete=models.CASCADE)
 
