@@ -15,8 +15,8 @@ class CustomerViewSet(viewsets.ModelViewSet):
 	def get_queryset(self):
 		queryset = Customer.objects.all()
 		active = self.request.GET.get('active')
-		active = active.title() # DO NOT REMOVE THIS LINE! django defaults the query to a lowercase true/false which raises an assertion error
 		if active:
+			active = active.title() # DO NOT REMOVE THIS LINE! django defaults the query to a lowercase true/false which raises an assertion error
 			queryset = queryset.filter(active=active)
 
 		return queryset
