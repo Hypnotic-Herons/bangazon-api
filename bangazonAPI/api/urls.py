@@ -11,7 +11,7 @@ router.register(r'training', views.TrainingView)
 router.register(r'customers', views.CustomerViewSet)
 router.register(r'product_type', views.ProductTypeViewSet)
 router.register(r'computer', views.ComputerViewSet)
-
+router.register(r'order', views.OrderViewSet)
 router.register(r'department', views.DepartmentViewSet)
 router.register(r'employees', views.EmployeeViewSet)
 router.register(r'employees_training', views.EmployeeTrainingViewSet)
