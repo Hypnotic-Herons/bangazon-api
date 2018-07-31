@@ -8,3 +8,4 @@ from .employee_training import EmployeeTrainingSerializer
 from .payment_type import PaymentTypeSerializer
 from .product import ProductSerializer
 from .order import OrderSerializer
+from .product_order_join import ProductOrderJoinSerializer
